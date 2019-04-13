@@ -1,0 +1,37 @@
+ETGMod Installer v19.4.12
+Something went horribly wrong:
+System.Net.WebException: Unable to connect to the remote server ---> System.Net.Sockets.SocketException: An attempt was made to access a socket in a way forbidden by its access permissions 185.199.111.153:80
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- End of inner exception stack trace ---
+   at System.Net.WebClient.DownloadDataInternal(Uri address, WebRequest& request)
+   at System.Net.WebClient.DownloadString(Uri address)
+   at System.Net.WebClient.DownloadString(String address)
+   at ETGModInstaller.RepoHelper.GetAPIMods()
+   at ETGModInstaller.InstallerWindow.DownloadModsList()
+Entering the Modgeon
+No previous mod installation found.
+Still reverting to unmodded backup...
+Reverting: EtG.exe
+Reverting: UnityPlayer.dll
+Reverting: Assembly-CSharp.dll
+Reverting: UnityEngine.CoreModule.dll
+Reloading Assembly-CSharp.dll
+Backing up: UnityEngine.CoreModule.dll
+Backing up: Assembly-CSharp.dll
+Backing up: EtG.exe
+Backing up: UnityPlayer.dll
+Mod #0: Base
+Downloading http://modthegungeon.github.io/ETGMOD.zip...
+System.Net.WebException: Unable to connect to the remote server ---> System.Net.Sockets.SocketException: An attempt was made to access a socket in a way forbidden by its access permissions 185.199.111.153:80
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- End of inner exception stack trace ---
+   at System.Net.WebClient.OpenRead(Uri address)
+   at System.Net.WebClient.OpenRead(String address)
+   at ETGModInstaller.ETGModder.Download(InstallerWindow ins, String url)
+   at ETGModInstaller.ETGModder.DownloadCached(InstallerWindow ins, String url, String cached)
+   at ETGModInstaller.ETGModder.Install_(InstallerWindow ins)
+   at ETGModInstaller.ETGModder.Install(InstallerWindow ins)
+   This is what i recived when tryinh to run it, would like to how to fix.
+   
